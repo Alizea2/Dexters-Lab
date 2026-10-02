@@ -22,10 +22,11 @@ Built as the final project for an Introduction to Programming I course.
 | `←` Left arrow | Move left |
 | `→` Right arrow | Move right |
 | `↑` Up arrow | Jump |
+| `Space` | Restart after Game Over or Level Complete |
 
 You lose a battery when you touch an enemy or fall into a canyon. Lose all three and it's **Game Over**. Reach the **POWER** zone at the end of the level to win.
 
-To play again after the game ends, refresh the page.
+After **Game Over** or **Level Complete**, press `Space` to play again.
 
 ## Running the Game
 

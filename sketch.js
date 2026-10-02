@@ -106,7 +106,7 @@ Sounds: 1.https://www.voicy.network/search/dexter-sound-effects
         canyon_Sound = loadSound('assets/Canyon_cartoon.mp3');
         canyon_Sound.setVolume(0.5);
         
-        jump_Sound = loadSound('assets/Jump_1.mp3');
+        jump_Sound = loadSound('assets/jump_1.mp3');
         jump_Sound.setVolume(0.1);
          
         flask_Sound = loadSound('assets/glass1.mp3');
@@ -372,6 +372,14 @@ Sounds: 1.https://www.voicy.network/search/dexter-sound-effects
 
     function keyPressed()
     {
+        //restarting the game with space after game over or level complete
+        if(keyCode == 32 && (battery < 1 || danger_Zone.isReached == true))
+            {
+            battery = 3;
+            start_dexters_Lab();
+            return;
+            }
+
         if(keyCode == 39) 
             {
             isRight=true;
